@@ -19,6 +19,7 @@ public class OutputValuesBelowAnAmount {
       }
       
       for(int i = 0; i < intValues.length; ++i){
+        System.out.println("NUM OF ELELEMTS " + NUM_ELEMENTS);
         if (intValues[i] < userValues[NUM_ELEMENTS]){
            System.out.println("IntegerValues: ");
            System.out.println(intValues[i] + ",");
