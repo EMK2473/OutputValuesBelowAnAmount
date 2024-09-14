@@ -9,7 +9,7 @@ public class OutputValuesBelowAnAmount {
       int[] userValues = new int[20];  
       int[] intValues = new int[NUM_ELEMENTS];
       
-      for(int i = 0; i < NUM_ELEMENTS; ++i){
+      for(int i = 0; i < NUM_ELEMENTS + 1; ++i){
         userValues[i] = scnr.nextInt();
 
         if(i < NUM_ELEMENTS){
@@ -17,6 +17,16 @@ public class OutputValuesBelowAnAmount {
             intValues[i] = userValues[i];
         }
       }
+      
+      for(int i = 0; i < intValues.length; ++i){
+        if (intValues[i] < userValues[NUM_ELEMENTS]){
+           System.out.println("IntegerValues: ");
+           System.out.println(intValues[i] + ",");
+        }
+      }
+      int threshold = userValues[NUM_ELEMENTS];
+      System.out.println();
+      System.out.print("Threshold: " + threshold);
 
       
    }
