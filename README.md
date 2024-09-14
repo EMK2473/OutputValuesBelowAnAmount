@@ -43,13 +43,16 @@ Once the program is running, you will be prompted to input an integer to represe
 - The subsequent integers are the values to be compared.
 - The final integer is the threshold value.
 
-The program will then compare each of the input values against the threshold and output only the numbers that are smaller than the threshold, separated by commas.Example: 
-
+The program will then compare each of the input values against the threshold and output only the numbers that are smaller than the threshold, separated by commas. Example: 
 
 Input:
 ```Java
 4 10 20 30 40 25 
 ```
+
+- Number of inputs: 4
+- Inputs: 10 20 30 40
+- Threshold: 25
 
 Output:
 ```Java
